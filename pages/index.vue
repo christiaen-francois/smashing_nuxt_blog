@@ -38,6 +38,14 @@
 <script>
 import Logo from '~/components/Logo.vue'
 export default {
+  head () {
+    return {
+      title: 'Articles CSS Tricks de la REST API',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Projet Nuxt.JS ' }
+      ]
+    }
+  },
   components: {
     Logo
   },

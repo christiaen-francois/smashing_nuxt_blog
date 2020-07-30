@@ -19,6 +19,14 @@
 <script>
 import Logo from '~/components/Logo.vue'
 export default {
+  head () {
+    return {
+      title: this.post.title.rendered,
+      meta: [
+        { hid: 'description', name: 'description', content: 'About our company Nuxt.js ' }
+      ]
+    }
+  },
   components: {
     Logo
   },
