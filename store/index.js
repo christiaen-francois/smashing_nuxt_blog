@@ -59,15 +59,16 @@ export const actions = {
       return acc.concat(item.tags)
     }, [])
     allTags = allTags.join()
-    console.log(allTags);
+    console.log(allTags.length);
+    console.log(`${siteURL}/wp-json/wp/v2/tags?page=1&per_page=100&include=${allTags}`);
     try {
       let tags = await fetch(
-        `${siteURL}/wp-json/wp/v2/tags?page=1&per_page=40&include=${allTags}`
+        `${siteURL}/wp-json/wp/v2/tags?page=1&per_page=100&include=${allTags}`
       ).then(res => res.json())
-      tags = tags.map(({ id, name }) => ({
-        id, name
+      tags = tags.map(({ id, name, slug }) => ({
+        id, name, slug
       }))
-      console.log(tags);
+      //console.log(tags);
       commit("updateTags", tags)
     } catch (err) {
       console.log(err)
