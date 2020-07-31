@@ -1,6 +1,6 @@
 <template>
 <div class="grid-container">
-  <div class="content">
+  <div class="blog">
     <main>
     <h1>Articles de CSS-Tricks repris par la REST API</h1>
   <!-- here we loop through the posts -->
@@ -9,7 +9,7 @@
     </div>
   </main>
   </div>
-  <div class="tags">
+  <div class="sidebar">
     <Logo />
     <aside>
       <tags :tags="tags" />
@@ -69,28 +69,6 @@ export default {
 </script>
 
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1px 15px;
-  grid-template-areas: "content content content tags";
-}
 
-.content { grid-area: content; }
 
-.tags { grid-area: tags; }
-
-.post{
-  margin-bottom: 1.5rem;
-}
-
-p{
-  margin: .5rem 0 1rem;
-}
-pre{
-  background: #F9F9F9;
-  padding: 1rem;
-  margin: .5rem 0 1rem;
-}
 </style>

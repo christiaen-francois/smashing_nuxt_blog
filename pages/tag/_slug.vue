@@ -1,6 +1,6 @@
 <template>
     <div class="grid-container">
-        <div class="content">
+        <div class="blog">
             <main class="post individual">
                 <h1>Tag : {{ tag.name }}</h1>
                 <div class="post" v-for="post in posts" :key="post.id">
@@ -8,7 +8,7 @@
                 </div>
             </main>
         </div>
-        <div class="tags">
+        <div class="sidebar">
             <Logo />
             <nuxt-link to="/">Retour</nuxt-link>
             <aside>

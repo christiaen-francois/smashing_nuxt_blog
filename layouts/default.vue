@@ -68,12 +68,6 @@ body {
 }
 
 .container{
-  /*
-  min-height:calc(100vh - (3vw * 4));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  */
   width: 100%;
 }
 .container > div{
@@ -84,10 +78,52 @@ body {
   margin-top: 2rem;
   display: inline-block;
 }
-
+img{
+  max-width: 100%;
+  height: auto;
+}
 a{
   color:#e72776;
   text-decoration: none;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 1fr;
+  gap: 15px 15px;
+  grid-template-areas: "blog sidebar";
+}
 
+.blog { grid-area: blog; }
+
+.sidebar { grid-area: sidebar; }
+
+@media only screen and (max-width: 767px) { /*change this number to whatever you want*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "blog" "sidebar";
+  }
+
+  .blog { grid-area: blog; }
+
+  .sidebar { grid-area: sidebar; }
+}
+
+.post{
+  margin-bottom: 1.5rem;
+}
+p{
+  margin: .5rem 0 1rem;
+}
+pre{
+  background: #F9F9F9;
+  padding: 1rem;
+  margin: .5rem 0 1rem;
+  width: 100%;
+  overflow: hidden;
+  white-space: initial;
+}
 </style>

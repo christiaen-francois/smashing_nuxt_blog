@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <div class="content">
+    <div class="blog">
       <main class="post individual">
         <h1>{{ post.title.rendered }}</h1>
         <small class="date">{{ post.date | dateformat }}</small>
@@ -13,7 +13,7 @@
         <nuxt-link to="/">Retour</nuxt-link>
       </main>
     </div>
-    <div class="tags">
+    <div class="sidebar">
       <Logo />
       <nuxt-link to="/">Retour</nuxt-link>
       <aside>
@@ -70,15 +70,5 @@ export default {
 </script>
 
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 1px 15px;
-  grid-template-areas: "content content content tags";
-}
 
-.content { grid-area: content; }
-
-.tags { grid-area: tags; }
 </style>
