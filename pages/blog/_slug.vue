@@ -17,58 +17,61 @@
       <Logo />
       <nuxt-link to="/">Retour</nuxt-link>
       <aside>
-          <tags :tags="tags" />
+        <tags :tags="tags" />
       </aside>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import tags from '~/components/tags.vue'
+import Logo from "~/components/Logo.vue";
+import tags from "~/components/tags.vue";
 export default {
-  head () {
+  head() {
     return {
       title: this.post.title.rendered,
       meta: [
-        { hid: 'description', name: 'description', content: 'About our company Nuxt.js ' }
-      ]
-    }
+        {
+          hid: "description",
+          name: "description",
+          content: "About our company Nuxt.js ",
+        },
+      ],
+    };
   },
   components: {
     Logo,
-    tags
+    tags,
   },
   computed: {
     posts() {
       return this.$store.state.posts;
     },
     post() {
-      return this.posts.find(el => el.slug === this.slug);
+      return this.posts.find((el) => el.slug === this.slug);
     },
     tags() {
       return this.$store.state.tags;
-    }
+    },
   },
   data() {
     return {
-      slug: this.$route.params.slug
+      slug: this.$route.params.slug,
     };
   },
   created() {
     this.$store.dispatch("getPosts");
   },
   methods: {
-    getTagName : function(id){
+    getTagName: function (id) {
       //let element = this.$store.state.tags.find(el => el.id === id)
-      console.log(this.tags.find(el => el.id === id));
+      console.log(this.tags.find((el) => el.id === id));
       //console.log
-      return this.tags.find(el => el.id === id)
-    }
-  }
+      return this.tags.find((el) => el.id === id);
+    },
+  },
 };
 </script>
-
+ 
 <style>
-
 </style>

@@ -1,34 +1,33 @@
 <template>
-<div class="grid-container">
-  <div class="blog">
-    <main>
-    <h1>Articles de CSS-Tricks repris par la REST API</h1>
-  <!-- here we loop through the posts -->
-    <div class="post" v-for="post in sortedPosts" :key="post.id">
-      <post :post="post" />
+  <div class="grid-container">
+    <div class="blog">
+      <main>
+        <h1>Articles de CSS-Tricks repris par la REST API</h1>
+        <div class="post" v-for="post in sortedPosts" :key="post.id">
+          <post :post="post" />
+        </div>
+      </main>
     </div>
-  </main>
+    <div class="sidebar">
+      <Logo />
+      <aside>
+        <tags :tags="tags" />
+      </aside>
+    </div>
   </div>
-  <div class="sidebar">
-    <Logo />
-    <aside>
-      <tags :tags="tags" />
-    </aside>
-  </div>
-</div>
 </template>
 <script>
-import Logo from '~/components/Logo.vue'
-import tags from '~/components/tags.vue'
-import post from '~/components/Post.vue'
+import Logo from "~/components/Logo.vue";
+import tags from "~/components/tags.vue";
+import post from "~/components/Post.vue";
 export default {
-  head () {
+  head() {
     return {
-      title: 'Articles CSS Tricks de la REST API',
+      title: "Articles CSS Tricks de la REST API",
       meta: [
-        { hid: 'description', name: 'description', content: 'Projet Nuxt.JS ' }
-      ]
-    }
+        { hid: "description", name: "description", content: "Projet Nuxt.JS " },
+      ],
+    };
   },
   components: {
     Logo,
@@ -38,7 +37,7 @@ export default {
   data() {
     return {
       selectedTag: null,
-      activeClass: "active"
+      activeClass: "active",
     };
   },
   computed: {
@@ -50,8 +49,8 @@ export default {
     },
     sortedPosts() {
       if (!this.selectedTag) return this.posts;
-      return this.posts.filter(el => el.tags.includes(this.selectedTag));
-    }
+      return this.posts.filter((el) => el.tags.includes(this.selectedTag));
+    },
   },
   created() {
     this.$store.dispatch("getPosts");
@@ -63,12 +62,10 @@ export default {
       } else {
         this.selectedTag = null;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style>
-
-
 </style>

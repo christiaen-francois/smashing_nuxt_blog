@@ -1,28 +1,46 @@
 <template>
-<svg version="1.1" id="Calque_1" class="NuxtLogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 200 199.98" style="enable-background:new 0 0 200 199.98;" xml:space="preserve">
-<style type="text/css">
-	.st0{clip-path:url(#SVGID_2_);}
-</style>
-<g>
-	<defs>
-		<path id="SVGID_1_" d="M0,35.56v97.75c0,36.82,29.85,66.67,66.66,66.67c25.75,0,48.09-14.6,59.2-35.98
+  <svg
+    version="1.1"
+    id="Calque_1"
+    class="NuxtLogo"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    viewBox="0 0 200 199.98"
+    style="enable-background:new 0 0 200 199.98;"
+    xml:space="preserve"
+  >
+    <style type="text/css">
+  .st0 {
+    clip-path: url(#SVGID_2_);
+  }
+    </style>
+    <g>
+      <defs>
+        <path
+          id="SVGID_1_"
+          d="M0,35.56v97.75c0,36.82,29.85,66.67,66.66,66.67c25.75,0,48.09-14.6,59.2-35.98
 			c-33.3-3.71-59.2-31.95-59.2-66.25V0L0,35.56z M133.33,35.56v97.75c0,11.07-2.69,21.51-7.47,30.7c2.45,0.28,4.95,0.42,7.47,0.42
-			c36.82,0,66.67-29.84,66.67-66.66V0L133.33,35.56z"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<g class="st0">
-		<defs>
-			<rect id="SVGID_3_" x="-107.23" y="-168.99" width="541.4" height="384.71"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
-		</clipPath>
-		<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_4_);">
-			
-				<image style="overflow:visible;" width="489" height="348" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAQQBBAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
+			c36.82,0,66.67-29.84,66.67-66.66V0L133.33,35.56z"
+        />
+      </defs>
+      <clipPath id="SVGID_2_">
+        <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+      </clipPath>
+      <g class="st0">
+        <defs>
+          <rect id="SVGID_3_" x="-107.23" y="-168.99" width="541.4" height="384.71" />
+        </defs>
+        <clipPath id="SVGID_4_">
+          <use xlink:href="#SVGID_3_" style="overflow:visible;" />
+        </clipPath>
+        <g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_4_);">
+          <image
+            style="overflow:visible;"
+            width="489"
+            height="348"
+            xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAQQBBAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA
 EAMCAwYAAAp2AAAQSgAAEyf/2wCEABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoX
 Hh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQEABEQ8PERMRFRISFRQRFBEUGhQWFhQaJhoaHBoa
 JjAjHh4eHiMwKy4nJycuKzU1MDA1NUBAP0BAQEBAQEBAQEBAQP/CABEIAVwB6QMBIgACEQEDEQH/
@@ -108,21 +126,17 @@ tOaLeWnNFvLTmi3lpzRby05ot5ac0W8tOaLeWnNFvLTmi3lpzRby05ot5ac0W8tOaLeWnNFvLTmi
 ZzRby3p+n/N/r8Ph8fX1/p8u428Y28Y28Y2sY2sY2sY2sY2cY2cY2PAbHgNjwH3+A+/wH3eA+7wH
 3eA+7xH3eI+7wHf/AH+A7/o8B3/TjHf9WMd/14huYhuYhu4hu4hu4hu4hvYhvYhvYhvYhvYhvYhv
 YhvYhvYhvYhvYhvYhvYhvYhvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYRvYR3/d6f8AIbuM
-f//Z" transform="matrix(1.1072 0 0 1.1055 -107.2347 -168.9922)">
-			</image>
-
-		</g>
-	</g>
-</g>
-</svg>
-
+f//Z"
+            transform="matrix(1.1072 0 0 1.1055 -107.2347 -168.9922)"
+          />
+        </g>
+      </g>
+    </g>
+  </svg>
 </template>
 
 <script>
-
-export default {
-
-}
+export default {};
 </script>
 
 <style>

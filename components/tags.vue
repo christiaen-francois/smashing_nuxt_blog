@@ -13,15 +13,14 @@
 
 <script>
 export default {
-    data() {
-        return{
-            //tags : tags
-        }
-    },
-    props: ["tags"]
-}
+  data() {
+    return {
+      //tags : tags
+    };
+  },
+  props: ["tags"],
+};
 </script>
 
 <style>
-
 </style>

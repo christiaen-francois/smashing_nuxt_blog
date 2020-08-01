@@ -7,17 +7,13 @@
 </template>
 
 <script>
-
-
 export default {
-  components: {
-    
-  }
-}
+  components: {},
+};
 </script>
 <style>
 html {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -34,24 +30,23 @@ html {
   margin: 0;
 }
 
-html{
+html {
   background: #092938;
   padding: 3vw;
 }
 body {
   background: #fff;
-  min-height:calc(100vh - (3vw * 2)) ;
+  min-height: calc(100vh - (3vw * 2));
   border-bottom-right-radius: 30px;
-  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   padding: 70px 3vw;
   position: relative;
   line-height: 1.6;
 }
 
-
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 2rem;
@@ -67,10 +62,10 @@ body {
   padding-bottom: 1rem;
 }
 
-.container{
+.container {
   width: 100%;
 }
-.container > div{
+.container > div {
   width: 100%;
 }
 
@@ -78,12 +73,12 @@ body {
   margin-top: 2rem;
   display: inline-block;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
-a{
-  color:#e72776;
+a {
+  color: #e72776;
   text-decoration: none;
 }
 .grid-container {
@@ -94,11 +89,16 @@ a{
   grid-template-areas: "blog sidebar";
 }
 
-.blog { grid-area: blog; }
+.blog {
+  grid-area: blog;
+}
 
-.sidebar { grid-area: sidebar; }
+.sidebar {
+  grid-area: sidebar;
+}
 
-@media only screen and (max-width: 767px) { /*change this number to whatever you want*/
+@media only screen and (max-width: 767px) {
+  /*change this number to whatever you want*/
   .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -107,21 +107,25 @@ a{
     grid-template-areas: "blog" "sidebar";
   }
 
-  .blog { grid-area: blog; }
+  .blog {
+    grid-area: blog;
+  }
 
-  .sidebar { grid-area: sidebar; }
+  .sidebar {
+    grid-area: sidebar;
+  }
 }
 
-.post{
+.post {
   margin-bottom: 1.5rem;
 }
-p{
-  margin: .5rem 0 1rem;
+p {
+  margin: 0.5rem 0 1rem;
 }
-pre{
-  background: #F9F9F9;
+pre {
+  background: #f9f9f9;
   padding: 1rem;
-  margin: .5rem 0 1rem;
+  margin: 0.5rem 0 1rem;
   width: 100%;
   overflow: hidden;
   white-space: initial;
